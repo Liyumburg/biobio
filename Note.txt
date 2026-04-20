@@ -1,0 +1,4 @@
+Nasa folder po na "Personal_Info" yung index.php to add records for the Personal Information po.
+Nasa folder po na "Educational" yung index.php to add records for the Educational Background po.
+Nasa folder po na "Employment" yung index.php to add records for the Employment History po.
+Nasa folder po na "View_records" yung index.php to view the whole records. 

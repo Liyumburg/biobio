@@ -29,6 +29,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
             <h1 class="fw-bold mb-2 text-danger text-center">Personal Profile</h1>
             <p class="text-muted text-center">Individual Information Sheet Records</p>
         </div>
+        
+        <div class="d-flex justify-content-start mb-3">
+            <a href="chart.php" class="btn btn-danger px-4 py-2 rounded-pill fw-semibold shadow-sm text-white">View Gender Chart</a>
+        </div>
+        
 
         <div class="d-flex justify-content-start mb-3">
             <a href="add.php" class="btn btn-danger px-4 py-2 rounded-pill fw-semibold shadow-sm text-white ">

@@ -76,12 +76,11 @@ require_once "Record.php";
                             </div>
 
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold">Gender *</label>
-                                <select class="form-select rounded-3" name="Gender" required>
-                                    <option value="" disabled selected>-- Select Gender --</option>
+                                <label class="form-label fw-semibold">Sex *</label>
+                                <select class="form-select rounded-3" name="Sex" required>
+                                    <option value="" disabled selected>-- Select Sex --</option>
                                     <option value="Male">Male</option>
                                     <option value="Female">Female</option>
-                                    <option value="Non-Binary">Non-Binary</option>
                                 </select>
                             </div>
                         </div>

@@ -81,9 +81,9 @@ if (isset($_GET['id'])) {
                             </div>
 
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold">Gender</label>
-                                <input type="text" class="form-control rounded-3 bg-white" name="Gender" disabled
-                                    value="<?= isset($row['Gender']) ? $row['Gender'] : '' ?>">
+                                <label class="form-label fw-semibold">Sex</label>
+                                <input type="text" class="form-control rounded-3 bg-white" name="Sex" disabled
+                                    value="<?= isset($row['Sex']) ? $row['Sex'] : '' ?>">
                             </div>
                         </div>
                     </div>

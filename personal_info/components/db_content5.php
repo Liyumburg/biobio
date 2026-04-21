@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
         </div>
         
         <div class="d-flex justify-content-start mb-3">
-            <a href="chart.php" class="btn btn-danger px-4 py-2 rounded-pill fw-semibold shadow-sm text-white">View Gender Chart</a>
+            <a href="chart.php" class="btn btn-danger px-4 py-2 rounded-pill fw-semibold shadow-sm text-white">View Sex Chart</a>
         </div>
         
 
@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
                                 <th>Middle Name</th>
                                 <th>Suffix</th>
                                 <th>DOB</th>
-                                <th>Gender</th>
+                                <th>Sex</th>
                                 <th>Email Address</th>
                                 <th>Province</th>
                                 <th>City/Municipal</th>
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete'])) {
                                 <td><?= strtoupper($row['Middle_name']) ?></td>
                                 <td><?= strtoupper($row['Suffix']) ?></td>
                                 <td><?= $row['DOB'] ?></td>
-                                <td><?= strtoupper($row['Gender']) ?></td>
+                                <td><?= strtoupper($row['Sex']) ?></td>
                                 <td><?= strtoupper($row['Email_address']) ?></td>
                                 <td><?= strtoupper($row['Province']) ?></td>
                                 <td><?= strtoupper($row['City']) ?></td>

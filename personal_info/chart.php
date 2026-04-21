@@ -1,8 +1,8 @@
 <?php
 require_once '../connections/db_connect5.php';
 
-// Query to count gender from the 'id' table
-$stmt = $db->prepare("SELECT Gender, COUNT(*) AS total FROM id GROUP BY Gender");
+// Query to count sex from the 'id' table
+$stmt = $db->prepare("SELECT Sex, COUNT(*) AS total FROM id GROUP BY Sex");
 $stmt->execute();
 $results = $stmt->fetchAll();
 
@@ -11,7 +11,7 @@ $labels = [];
 $counts = [];
 
 foreach ($results as $row) {
-    $labels[] = strtoupper($row['Gender']);
+    $labels[] = strtoupper($row['Sex']);
     $counts[] = (int)$row['total'];
 }
 
@@ -25,7 +25,7 @@ $countsJson = json_encode($counts);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gender Distribution Chart</title>
+    <title>Sex Distribution Chart</title>
     <link rel="stylesheet" href="./style/bootstrap-5.3.8-dist/css/bootstrap.min.css">
 
     <!-- Chart.js CDN -->
@@ -39,8 +39,8 @@ $countsJson = json_encode($counts);
         <a href="index.php" class="btn btn-outline-secondary">← Back</a>
     </div>
 
-    <h1 class="fw-bold text-danger text-center mb-1">Gender Distribution</h1>
-    <p class="text-muted text-center mb-5">Dashboard Report — Personal Info Records</p>
+    <h1 class="fw-bold text-danger text-center mb-1">Sex Distribution Chart</h1>
+   
 
     <div class="row justify-content-center g-4">
 
@@ -63,14 +63,14 @@ $countsJson = json_encode($counts);
                 <table class="table table-bordered text-center">
                     <thead class="table-danger">
                         <tr>
-                            <th>Gender</th>
+                            <th>Sex</th>
                             <th>Count</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php foreach ($results as $row): ?>
                         <tr>
-                            <td><?= strtoupper($row['Gender']) ?></td>
+                            <td><?= strtoupper($row['Sex']) ?></td>
                             <td><?= $row['total'] ?></td>
                         </tr>
                         <?php endforeach; ?>

@@ -98,9 +98,9 @@ if (isset($_POST['update'])) {
                     </div>
 
                     <div class="col-md-6">
-                        <label class="form-label">Gender</label>
-                        <input type="text" class="form-control" name="Gender"
-                            value="<?= $row['Gender'] ?>">
+                        <label class="form-label">Sex</label>
+                        <input type="text" class="form-control" name="Sex"
+                            value="<?= $row['Sex'] ?>">
                     </div>
                 </div>
 

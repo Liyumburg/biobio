@@ -15,7 +15,7 @@ if ($id) {
         $gettemp = $db->prepare("SELECT Last_name, First_name, Middle_name, Suffix,
                     Mobile_number, Email_address,
                     Province, City, Barangay, Street,
-                    DOB, Gender, Languages,
+                    DOB, Sex, Languages,
                     Marital_status, Religion, Hobbies,
                     uploads FROM temp_person WHERE id = ?");
         $gettemp->execute([$id]);
@@ -39,7 +39,7 @@ if ($id) {
                 $insert = $db->prepare("INSERT INTO id (Last_name, First_name, Middle_name, Suffix,
                     Mobile_number, Email_address,
                     Province, City, Barangay, Street,
-                    DOB, Gender, Languages,
+                    DOB, Sex, Languages,
                     Marital_status, Religion, Hobbies,
                     uploads) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
                 $insert->execute([
@@ -54,7 +54,7 @@ if ($id) {
                     $row['Barangay'],
                     $row['Street'],
                     $row['DOB'],
-                    $row['Gender'],
+                    $row['Sex'],
                     $row['Languages'],
                     $row['Marital_status'],
                     $row['Religion'],

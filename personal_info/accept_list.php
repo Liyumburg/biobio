@@ -101,7 +101,7 @@ foreach ($pendingData as $row) {
                         <tr>
                             <th>#</th>
                             <th>Name</th>
-                            <th>Gender</th>
+                            <th>Sex</th>
                             <th>DOB</th>
                             <th>Email</th>
                             <th>Mobile</th>
@@ -130,7 +130,7 @@ foreach ($pendingData as $row) {
                                 <br><span class="badge-duplicate ms-1">⚠️ Duplicate</span>
                                 <?php endif; ?>
                             </td>
-                            <td><?= htmlspecialchars($row['Gender']) ?></td>
+                            <td><?= htmlspecialchars($row['Sex']) ?></td>
                             <td><?= htmlspecialchars($row['DOB']) ?></td>
                             <td><?= htmlspecialchars($row['Email_address']) ?></td>
                             <td><?= htmlspecialchars($row['Mobile_number']) ?></td>

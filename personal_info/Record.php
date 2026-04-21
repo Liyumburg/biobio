@@ -24,7 +24,7 @@ class Record {
     public string $Suffix;
     public string $Languages;
     public string $Email_address;
-    public string $Gender;
+    public string $Sex;
     public string $Marital_status;
     public string $DOB;
     public string $Hobbies;
@@ -58,7 +58,7 @@ class Record {
         $this->Barangay = $_POST['Barangay'] ?? '';
         $this->Street = $_POST['Street'] ?? '';
         $this->DOB = $_POST['DOB'] ?? '';
-        $this->Gender = $_POST['Gender'] ?? '';
+        $this->Sex = $_POST['Sex'] ?? '';
         $this->Languages = $_POST['Languages'] ?? '';
         $this->Marital_status = $_POST['Marital_status'] ?? '';
         $this->Religion = $_POST['Religion'] ?? '';
@@ -102,7 +102,7 @@ class Record {
                     Last_name, First_name, Middle_name, Suffix,
                     Mobile_number, Email_address,
                     Province, City, Barangay, Street,
-                    DOB, Gender, Languages,
+                    DOB, Sex, Languages,
                     Marital_status, Religion, Hobbies,
                     uploads
                 )
@@ -121,7 +121,7 @@ class Record {
                 $this->Barangay,
                 $this->Street,
                 $this->DOB,
-                $this->Gender,
+                $this->Sex,
                 $this->Languages,
                 $this->Marital_status,
                 $this->Religion,
@@ -223,7 +223,7 @@ class Record {
                 Barangay=?,
                 Street=?,
                 DOB=?,
-                Gender=?,
+                Sex=?,
                 Languages=?,
                 Marital_status=?,
                 Religion=?,
@@ -244,7 +244,7 @@ class Record {
                 $this->Barangay,
                 $this->Street,
                 $this->DOB,
-                $this->Gender,
+                $this->Sex,
                 $this->Languages,
                 $this->Marital_status,
                 $this->Religion,
